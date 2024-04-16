@@ -111,7 +111,7 @@ class MainWindow(QMainWindow):
 
     def onSearchFolderBtnClicked(self):
         '''
-        Event handler for the "Seleziona la cartella" button click.
+        Event handler for the "Select Folder" button click.
         Opens a file dialog to select a backup folder and updates the folderPathLineEdit.
         '''
         dialog = QFileDialog()
@@ -120,7 +120,7 @@ class MainWindow(QMainWindow):
 
     def onSearchFilesBtnClicked(self):
         '''
-        Event handler for the "Seleziona file" button click.
+        Event handler for the "Select file" button click.
         Opens a file dialog to select files for backup and updates the fileNameLab.
         '''
         dialog = QFileDialog()
@@ -137,7 +137,7 @@ class MainWindow(QMainWindow):
             
     def onContinuosBackupBtnClicked(self):
         '''
-        Event handler for the "Esegui backup continuo" button click.
+        Event handler for the "Run Continuous Backup" button click.
         Starts or stops continuous backup based on the current state of isContinuosBackupActive.
         '''
         self.backupTime = self.backupTimeSelector.value()
@@ -169,7 +169,7 @@ class MainWindow(QMainWindow):
 
     def onBackupBtnClicked(self):
         '''
-        Event handler for the "Esegui backup" button click and continuous backup timer.
+        Event handler for the "Run backup" button click and continuous backup timer.
         Performs the backup operation and updates the status bar.
         '''
         self.settings.setValue("fileToBackup", self.fileToBackup)
