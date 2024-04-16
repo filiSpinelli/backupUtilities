@@ -1,1 +1,1 @@
-pyinstaller --onefile --icon=app_icon.ico --windowed --name=demosBackupUtilities  main.py
+pyinstaller --onefile --icon=app_icon.ico --windowed --name=BackupUtilities  main.py
